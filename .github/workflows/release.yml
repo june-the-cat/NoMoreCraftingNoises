@@ -1,0 +1,38 @@
+name: Build and publish Dalamud release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build plugin
+        run: dotnet build .\NoMoreCraftingNoises.slnx --configuration Release
+
+      - name: Package plugin
+        shell: pwsh
+        run: |
+          $package = '.\NoMoreCraftingNoises\bin\x64\Release\NoMoreCraftingNoises\latest.zip'
+          if (-not (Test-Path $package)) {
+            throw "Dalamud SDK package not found: $package"
+          }
+          Copy-Item $package '.\NoMoreCraftingNoises.zip' -Force
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create "$env:GITHUB_REF_NAME" .\NoMoreCraftingNoises.zip --generate-notes --title "$env:GITHUB_REF_NAME"
