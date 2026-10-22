@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Dalamud.NET.Sdk/15.0.0">
   <PropertyGroup>
-    <Version>0.1.0.1</Version>
+    <Version>0.1.0.2</Version>
     <!-- Manifest fields (see https://github.com/goatcorp/DalamudPackager/blob/827d88dc/DalamudPackager/DalamudPackager.cs#L420) -->
-    <Author>june-the-cat</Author>
+    <Author>junegob</Author>
     <Name>No More Crafting Noises</Name>
     <Punchline>Reduce nearby crafting sounds</Punchline>
     <Description>Automatically filters mapped crafting sound effects classified as Other, while leaving Player-category sounds alone.</Description>
-    <RepoUrl>https://github.com/june-the-cat/NoMoreCraftingNoises</RepoUrl>
+    <RepoUrl>https://github.com/junegob/NoMoreCraftingNoises</RepoUrl>
     <Tags>plugin;crafters;crafting;sound</Tags>
   </PropertyGroup>
 

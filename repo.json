@@ -1,18 +1,18 @@
 [
   {
-    "Author": "june-the-cat",
+    "Author": "junegob",
     "Name": "No More Crafting Noises",
     "Description": "Automatically filters mapped crafting sound effects classified as Other, while leaving Player-category sounds alone. Uses version-sensitive game hooks; review the project README and custom-repository source before installing.",
     "InternalName": "NoMoreCraftingNoises",
-    "AssemblyVersion": "0.1.0.1",
-    "RepoUrl": "https://github.com/june-the-cat/NoMoreCraftingNoises",
+    "AssemblyVersion": "0.1.0.2",
+    "RepoUrl": "https://github.com/junegob/NoMoreCraftingNoises",
     "ApplicableVersion": "any",
     "DalamudApiLevel": 15,
     "Punchline": "Reduce nearby crafting sounds",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/june-the-cat/NoMoreCraftingNoises/releases/latest/download/NoMoreCraftingNoises.zip",
-    "DownloadLinkUpdate": "https://github.com/june-the-cat/NoMoreCraftingNoises/releases/latest/download/NoMoreCraftingNoises.zip",
-    "LastUpdate": "1792690534"
+    "DownloadLinkInstall": "https://github.com/junegob/NoMoreCraftingNoises/releases/latest/download/NoMoreCraftingNoises.zip",
+    "DownloadLinkUpdate": "https://github.com/junegob/NoMoreCraftingNoises/releases/latest/download/NoMoreCraftingNoises.zip",
+    "LastUpdate": "1792692621"
   }
 ]

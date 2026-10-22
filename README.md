@@ -18,7 +18,7 @@ The game exposes a sound category here, not a definitive source actor ID. The fi
 
 In Dalamud, open `/xlsettings` → **Experimental** → **Custom Plugin Repositories**, then add:
 
-`https://raw.githubusercontent.com/june-the-cat/NoMoreCraftingNoises/master/repo.json`
+`https://raw.githubusercontent.com/junegob/NoMoreCraftingNoises/master/repo.json`
 
 Save the repository URL, open `/xlplugins`, search for **No More Crafting Noises**, and install it. This custom repository is maintained by this project, not by Dalamud; review and trust the source repository before installing. The release download becomes available after the first tagged GitHub release completes.
 
