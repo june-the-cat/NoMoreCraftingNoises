@@ -14,7 +14,7 @@ The game exposes a sound category here, not a definitive source actor ID. The fi
 
 ## Install
 
-### Custom repository (recommended)
+### Custom repository
 
 In Dalamud, open `/xlsettings` → **Experimental** → **Custom Plugin Repositories**, then add:
 
@@ -23,10 +23,6 @@ In Dalamud, open `/xlsettings` → **Experimental** → **Custom Plugin Reposito
 Save the repository URL, open `/xlplugins`, search for **No More Crafting Noises**, and install it. This custom repository is maintained by this project, not by Dalamud; review and trust the source repository before installing. The release download becomes available after the first tagged GitHub release completes.
 
 The plugin hooks native game functions using signatures and version-sensitive sound structures. Game updates can invalidate these; if the filter does not start, check the Dalamud log and wait for an updated build rather than assuming filtering is active.
-
-## Publishing a release
-
-The GitHub Actions workflow builds and attaches `NoMoreCraftingNoises.zip` to a GitHub release when a `v*` tag is pushed. The custom repository points to the latest release asset, so it will not install until the first release exists. Before each release, update the project version in `NoMoreCraftingNoises/NoMoreCraftingNoises.csproj` and `AssemblyVersion`/`LastUpdate` in `repo.json` so the installer sees the new version, then push the repository changes and a matching tag (for example, `v0.1.0.0`). The repository JSON must be publicly reachable over HTTPS.
 
 ## Diagnostics
 
